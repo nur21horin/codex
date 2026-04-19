@@ -7,7 +7,7 @@ const ProfileHeader = ({ user, profile }) => {
   const [coverPhoto, setCoverPhoto] = useState(profile?.coverPhoto || "");
   const [uploading, setUploading] = useState(false);
 
-  // ================= COVER UPLOAD =================
+
  const handleCoverUpload = async (e) => {
   const file = e.target.files[0];
   if (!file) return;
@@ -18,7 +18,7 @@ const ProfileHeader = ({ user, profile }) => {
   try {
     setUploading(true);
 
-    // 1. upload to imgbb
+   
     const res = await fetch(
       `https://api.imgbb.com/1/upload?key=${import.meta.env.VITE_IMGBB_API_KEY}`,
       { method: "POST", body: formData }
@@ -27,7 +27,7 @@ const ProfileHeader = ({ user, profile }) => {
     const data = await res.json();
     const imageUrl = data.data.url;
 
-    // 2. save to MongoDB
+  
     await fetch("https://codesharebackend-1.onrender.com/users/cover", {
       method: "PATCH",
       headers: {
@@ -37,7 +37,7 @@ const ProfileHeader = ({ user, profile }) => {
       body: JSON.stringify({ coverPhoto: imageUrl }),
     });
 
-    // 3. update UI state ONLY
+  
     setCoverPhoto(imageUrl);
 
     Swal.fire("Success", "Cover updated!", "success");
@@ -51,7 +51,7 @@ const ProfileHeader = ({ user, profile }) => {
   return (
     <div className="relative bg-base-100 rounded-2xl shadow-xl overflow-hidden">
 
-      {/* COVER IMAGE */}
+     
       <div className="h-44 md:h-64 relative">
         <img
           src={
@@ -61,7 +61,7 @@ const ProfileHeader = ({ user, profile }) => {
           className="w-full h-full object-cover"
         />
 
-        {/* UPLOAD BUTTON */}
+      
         <label className="absolute top-4 right-4 btn btn-sm btn-primary">
           {uploading ? "Uploading..." : "Change Cover"}
           <input
@@ -73,7 +73,7 @@ const ProfileHeader = ({ user, profile }) => {
         </label>
       </div>
 
-      {/* AVATAR */}
+     
       <div className="absolute left-6 -bottom-12">
         <img
           src={
