@@ -58,7 +58,7 @@ const Navbar = () => {
 
       </div>
 
-      {/* MOBILE MENU */}
+      
       {open && (
         <div className="md:hidden px-4 pb-4 flex flex-col gap-3 text-sm bg-card border-t border-muted">
 
