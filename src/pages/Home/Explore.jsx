@@ -6,12 +6,12 @@ const Explore = () => {
   const [search, setSearch] = useState("");
 
   const [tag, setTag] = useState("");
-  const [dateSort, setDateSort] = useState("newest"); // newest | oldest
+  const [dateSort, setDateSort] = useState("newest");
   const [sortBy, setSortBy] = useState("latest");
 
   const [loading, setLoading] = useState(false);
 
-  // FETCH DATA
+  
  useEffect(() => {
   const fetchPosts = async () => {
     setLoading(true);
@@ -23,10 +23,10 @@ const Explore = () => {
 
       const data = await res.json();
 
-      setPosts(data.posts || []); // 🔥 IMPORTANT
+      setPosts(data.posts || []); 
     } catch (err) {
       console.log(err);
-      setPosts([]); // prevent crash
+      setPosts([]); 
     }
 
     setLoading(false);
@@ -38,10 +38,9 @@ const Explore = () => {
   return (
     <div className="p-4 space-y-4">
 
-      {/* HEADER */}
+     
       <h1 className="text-2xl font-bold">Explore Posts</h1>
 
-      {/* SEARCH + FILTERS */}
       <div className="grid gap-3 md:grid-cols-4">
 
         {/* SEARCH */}
