@@ -72,7 +72,7 @@ const PostDetails = () => {
             <span>{new Date(post.created_at).toLocaleString()}</span>
           </div>
 
-          {/* DESCRIPTION */}
+      
           <p className="text-base leading-relaxed text-text/80">
             {post.description}
           </p>
