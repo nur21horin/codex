@@ -100,7 +100,7 @@ const PostDetails = () => {
             </p>
           </div>
 
-          {/* RELATED */}
+          
           <div>
             <h2 className="font-semibold text-lg text-accent mb-3">
               🔗 Related Posts
