@@ -47,7 +47,7 @@ const PostDetails = () => {
         className="max-w-4xl mx-auto bg-card border border-muted rounded-2xl shadow-lg overflow-hidden"
       >
 
-        {/* IMAGE */}
+        
         <div className="overflow-hidden">
           <motion.img
             initial={{ scale: 1.1 }}
