@@ -31,7 +31,7 @@ const CreatePost = () => {
     );
   }
 
-  // compress
+  
   const compressImage = async (file) => {
     const options = {
       maxSizeMB: 0.5,
