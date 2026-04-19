@@ -40,10 +40,9 @@ const Register = () => {
     const imageFile = data.photo[0];
     const imageUrl = await uploadImage(imageFile);
 
-    // 2. Create user
+    
     const result = await registerUser(data.email, data.password);
 
-    // 3. Update profile
     if (auth.currentUser) {
       await updateUserProfile({
         displayName: data.name,
@@ -62,7 +61,7 @@ const Register = () => {
 });
     }
 
-    // 4. Success alert
+    //Success alert
     Swal.fire({
       title: "Success!",
       text: "Registration completed successfully 🎉",
@@ -70,7 +69,7 @@ const Register = () => {
       confirmButtonText: "OK",
     });
 
-    // 5. Redirect
+    // Redirect
     navigate(location?.state || "/");
 
   } catch (error) {
