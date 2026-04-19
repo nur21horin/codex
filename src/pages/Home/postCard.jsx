@@ -75,7 +75,7 @@ const PostCard = ({ post }) => {
   return (
     <div className="bg-card border border-muted rounded-2xl shadow-md overflow-hidden flex flex-col h-[520px] hover:scale-[1.02] transition">
 
-      {/* IMAGE */}
+    
       <img
         src={post.image || "https://i.ibb.co/2kR6z6n/user.png"}
         className="w-full h-40 object-cover"
@@ -83,7 +83,7 @@ const PostCard = ({ post }) => {
 
       <div className="p-4 flex flex-col flex-grow space-y-3">
 
-        {/* USER */}
+       
         <div className="flex items-center gap-3">
           <img
             src={post.user_photo || "https://i.ibb.co/2kR6z6n/user.png"}
@@ -99,17 +99,17 @@ const PostCard = ({ post }) => {
           </div>
         </div>
 
-        {/* TITLE */}
+      
         <h2 className="font-bold text-lg text-primary line-clamp-1">
           {post.problem_name}
         </h2>
 
-        {/* DESCRIPTION */}
+     
         <p className="text-sm text-muted line-clamp-2">
           {post.description}
         </p>
 
-        {/* TAGS */}
+  
         <div className="flex flex-wrap gap-2">
           {post.tags?.slice(0, 3).map((tag, i) => (
             <span
@@ -121,7 +121,7 @@ const PostCard = ({ post }) => {
           ))}
         </div>
 
-        {/* META */}
+        
         <div className="text-xs text-muted">
           👍 {likes} Likes • 💬 {comments.length} Comments
         </div>
