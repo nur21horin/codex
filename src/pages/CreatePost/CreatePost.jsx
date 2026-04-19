@@ -205,7 +205,6 @@ const CreatePost = () => {
           </label>
         </div>
 
-        {/* FILE INFO */}
         {image && (
           <p className="text-sm text-muted">📁 {image.name}</p>
         )}
