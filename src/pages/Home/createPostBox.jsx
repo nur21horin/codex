@@ -15,7 +15,7 @@ const CreatePostBox = ({ search, setSearch, setPage, loading }) => {
   return (
     <div className="sticky top-0 z-50 bg-card  rounded-xl p-4 shadow-md space-y-4">
 
-      {/* SEARCH BOX */}
+
       <div className="relative w-full">
 
         <Search className="absolute left-3 top-1/2 -translate-y-1/2 w-4 h-4 text-muted" />
@@ -31,12 +31,9 @@ const CreatePostBox = ({ search, setSearch, setPage, loading }) => {
           className="w-full bg-bg border border-muted text-text placeholder:text-muted rounded-lg pl-10 pr-10 py-2 focus:outline-none"
         />
 
-        {/* LOADING */}
-        {loading && (
-          <Loader2 className="absolute right-10 top-1/2 -translate-y-1/2 w-4 h-4 animate-spin text-primary" />
-        )}
+       
+       
 
-        {/* CLEAR */}
         {showClear && !loading && (
           <button
             onClick={() => setSearch("")}
