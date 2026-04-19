@@ -65,7 +65,7 @@ const PostDetails = () => {
             {post.problem_name}
           </h1>
 
-          {/* META */}
+          
           <div className="flex flex-wrap gap-2 text-sm text-muted">
             <span>👤 {post.user_name}</span>
             <span>•</span>
