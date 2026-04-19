@@ -46,7 +46,6 @@ const CreatePost = () => {
     }
   };
 
-  // handle file
   const handleFile = async (file) => {
     if (!file) return;
 
