@@ -205,9 +205,7 @@ const CreatePost = () => {
           </label>
         </div>
 
-        {image && (
-          <p className="text-sm text-muted">📁 {image.name}</p>
-        )}
+        
 
         {/* PREVIEW */}
         {preview && (
