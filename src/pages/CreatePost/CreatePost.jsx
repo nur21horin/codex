@@ -122,7 +122,7 @@ const CreatePost = () => {
       const result = await res.json();
 
       if (result.insertedId) {
-        Swal.fire("Success 🚀", "Post created successfully!", "success");
+        Swal.fire("Success ", "Post created successfully!", "success");
 
         setTitle("");
         setDescription("");
