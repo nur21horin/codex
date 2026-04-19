@@ -3,7 +3,7 @@ import { useEffect, useState } from "react";
 const ThemeToggle = () => {
   const [dark, setDark] = useState(false);
 
-  // SYSTEM THEME AUTO DETECT
+
   useEffect(() => {
     const saved = localStorage.getItem("theme");
 
