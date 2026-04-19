@@ -9,7 +9,7 @@ const ProfileSkills = () => {
   const [bio, setBio] = useState("");
   const [skills, setSkills] = useState("");
 
-  // ================= FETCH PROFILE =================
+ 
   useEffect(() => {
     const fetchProfile = async () => {
       if (!user) return;
@@ -28,7 +28,6 @@ const ProfileSkills = () => {
       setProfile(data);
       setBio(data?.bio || "");
 
-      // convert skills array → string
       setSkills(
         data?.skills?.map((s) => s.name).join(", ") || ""
       );
@@ -37,13 +36,13 @@ const ProfileSkills = () => {
     fetchProfile();
   }, [user]);
 
-  // ================= UPDATE PROFILE =================
+  
   const handleUpdate = async () => {
     const skillArray = skills
       .split(",")
       .map((s) => ({
         name: s.trim(),
-        rating: 1200, // default CP rating
+        rating: 1200, 
       }))
       .filter((s) => s.name);
 
@@ -65,7 +64,6 @@ const ProfileSkills = () => {
   return (
     <div className="max-w-3xl mx-auto p-4 space-y-6">
 
-      {/* ================= BIO ================= */}
       <div className="card bg-base-100 shadow p-4">
         <h2 className="font-bold mb-2">Bio</h2>
 
@@ -77,7 +75,6 @@ const ProfileSkills = () => {
         />
       </div>
 
-      {/* ================= SKILLS INPUT ================= */}
       <div className="card bg-base-100 shadow p-4">
         <h2 className="font-bold mb-2">Skills</h2>
 
@@ -93,7 +90,6 @@ const ProfileSkills = () => {
         </p>
       </div>
 
-      {/* ================= SAVE BUTTON ================= */}
       <button
         onClick={handleUpdate}
         className="btn btn-primary w-full"
@@ -101,7 +97,6 @@ const ProfileSkills = () => {
         Save Profile
       </button>
 
-      {/* ================= DISPLAY SECTION ================= */}
       {profile && (
         <div className="card bg-base-100 shadow p-4">
 
