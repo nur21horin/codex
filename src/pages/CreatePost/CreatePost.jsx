@@ -209,7 +209,13 @@ const CreatePost = () => {
           <p className="text-sm text-muted">📁 {image.name}</p>
         )}
 
-        
+        {preview && (
+          <img
+            src={preview}
+            onClick={() => setModalOpen(true)}
+            className="w-full h-40 object-cover rounded-lg border border-muted cursor-pointer"
+          />
+        )}
 
         {modalOpen && (
           <div
