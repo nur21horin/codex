@@ -55,7 +55,7 @@ const CreatePost = () => {
     setPreview(URL.createObjectURL(compressed));
   };
 
-  // drag handlers
+  // drag 
   const handleDragOver = (e) => {
     e.preventDefault();
     setDragActive(true);
