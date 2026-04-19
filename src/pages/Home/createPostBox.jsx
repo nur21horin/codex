@@ -46,10 +46,8 @@ const CreatePostBox = ({ search, setSearch, setPage, loading }) => {
         )}
       </div>
 
-      {/* USER + CREATE POST */}
       <div className="flex items-center justify-between flex-wrap gap-3">
 
-        {/* USER INFO */}
         <div className="flex items-center gap-3">
           <img
             src={
@@ -65,7 +63,6 @@ const CreatePostBox = ({ search, setSearch, setPage, loading }) => {
           </span>
         </div>
 
-        {/* CREATE BUTTON */}
         <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
           <Link
             to="/createpost"
