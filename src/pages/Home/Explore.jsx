@@ -43,7 +43,7 @@ const Explore = () => {
 
       <div className="grid gap-3 md:grid-cols-4">
 
-        {/* SEARCH */}
+        
         <input
           type="text"
           placeholder="Search posts..."
@@ -52,7 +52,6 @@ const Explore = () => {
           className="input input-bordered w-full"
         />
 
-        {/* TAG FILTER */}
         <select
           value={tag}
           onChange={(e) => setTag(e.target.value)}
@@ -64,7 +63,7 @@ const Explore = () => {
           <option value="mern">MERN</option>
         </select>
 
-        {/* DATE FILTER */}
+       
         <select
           value={dateSort}
           onChange={(e) => setDateSort(e.target.value)}
@@ -74,7 +73,7 @@ const Explore = () => {
           <option value="oldest">Oldest First</option>
         </select>
 
-        {/* SORTING */}
+       
         <select
           value={sortBy}
           onChange={(e) => setSortBy(e.target.value)}
@@ -86,12 +85,12 @@ const Explore = () => {
 
       </div>
 
-      {/* LOADING */}
+     
       {loading && (
         <p className="text-center text-gray-500">Loading posts...</p>
       )}
 
-      {/* POSTS GRID */}
+      
       <div className="grid gap-6 grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 mt-4">
         {posts.map((post) => (
           <PostCard key={post._id} post={post} />
