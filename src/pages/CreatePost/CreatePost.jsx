@@ -174,7 +174,7 @@ const CreatePost = () => {
           onChange={(e) => setTags(e.target.value)}
         />
 
-        {/* DRAG & DROP UPLOAD */}
+      
         <div
           onDragOver={handleDragOver}
           onDragLeave={handleDragLeave}
