@@ -56,7 +56,7 @@ const Profile = () => {
     fetchData();
   }, [user]);
 
-  // ================= COVER UPLOAD =================
+  
   const handleCoverUpload = async (e) => {
     const file = e.target.files[0];
     if (!file) return;
@@ -100,7 +100,7 @@ const Profile = () => {
     }
   };
 
-  // ================= UPDATE PROFILE =================
+
   const handleUpdate = async () => {
     const skillArray = skills
       .split(",")
@@ -151,7 +151,7 @@ const Profile = () => {
   return (
     <div className="min-h-screen bg-base-200 p-4 md:p-8 text-base-content">
 
-      {/* HERO */}
+ 
       <motion.div
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
