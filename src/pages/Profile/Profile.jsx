@@ -44,7 +44,7 @@ const Profile = () => {
         setBio(data?.bio || "");
         setSkills(data?.skills?.map((s) => s.name).join(", ") || "");
 
-        // posts (MongoDB)
+      
         const postRes = await fetch("https://codesharebackend-1.onrender.com/posts");
         const postData = await postRes.json();
         setPosts(postData.posts || []);
