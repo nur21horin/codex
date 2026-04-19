@@ -35,7 +35,7 @@ const Login = () => {
       <form className="card-body" onSubmit={handleSubmit(handleLogin)}>
         <fieldset className="fieldset space-y-3">
 
-          {/* Email */}
+     
           <label className="label font-medium">Email</label>
           <input
             type="email"
