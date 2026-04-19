@@ -4,7 +4,7 @@ export default function About() {
 
       <div className="max-w-4xl w-full bg-card border border-muted shadow-lg rounded-2xl p-6">
 
-        {/* HEADER */}
+        
         <h1 className="text-3xl font-bold text-center text-primary mb-2">
           About CodeShare 🚀
         </h1>
@@ -13,10 +13,10 @@ export default function About() {
           A competitive programming platform to share solutions, insights, and problem-solving techniques
         </p>
 
-        {/* GRID */}
+        
         <div className="grid md:grid-cols-2 gap-5">
 
-          {/* CARD */}
+          
           <div className="bg-bg border border-muted p-5 rounded-xl hover:scale-[1.02] transition">
             <h2 className="font-semibold text-secondary">💡 What is CodeShare?</h2>
             <p className="text-sm text-muted mt-2 leading-relaxed">
@@ -70,7 +70,7 @@ export default function About() {
 
         </div>
 
-        {/* FOOTER */}
+        
         <div className="mt-8 text-center text-muted text-sm">
           Built for competitive programmers ⚡
         </div>
