@@ -126,10 +126,10 @@ const PostCard = ({ post }) => {
           👍 {likes} Likes • 💬 {comments.length} Comments
         </div>
 
-        {/* ACTIONS */}
+        
         <div className="mt-auto space-y-2">
 
-          {/* LIKE + COMMENT INPUT */}
+         
           <div className="flex gap-2 items-center">
 
             <button
