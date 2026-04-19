@@ -229,12 +229,11 @@ const CreatePost = () => {
           </div>
         )}
 
-        {/* TIP */}
         <div className="p-4 rounded-xl bg-bg border border-muted text-sm text-muted">
           💡 Tip: Add clear explanation and optimized approach.
         </div>
 
-        {/* SUBMIT */}
+       
         <button
           onClick={handleSubmit}
           disabled={loadingPost}
