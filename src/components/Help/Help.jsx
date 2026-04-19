@@ -7,7 +7,7 @@ const Help = () => {
 
       <div className="max-w-2xl w-full bg-card border border-muted shadow-lg rounded-2xl p-6 space-y-5">
 
-        {/* HEADER */}
+        
         <h1 className="text-3xl font-bold text-center text-primary">
           Help & Support
         </h1>
@@ -28,7 +28,7 @@ const Help = () => {
           </div>
         </Link>
 
-        {/* QUICK SUPPORT */}
+        
         <div className="p-4 rounded-xl border border-muted bg-bg hover:bg-card transition">
           <h2 className="font-semibold text-text">
             ⚡ Quick Support
@@ -38,7 +38,7 @@ const Help = () => {
           </p>
         </div>
 
-        {/* CONTACT */}
+        
         <div className="p-4 rounded-xl border border-muted bg-bg hover:bg-card transition">
           <h2 className="font-semibold text-text">
             📧 Contact Support

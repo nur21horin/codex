@@ -19,7 +19,7 @@ const PostDetails = () => {
       .catch(() => setLoading(false));
   }, [id]);
 
-  // LOADING
+  
   if (loading) {
     return (
       <div className="min-h-screen flex items-center justify-center bg-bg text-text">
@@ -28,7 +28,7 @@ const PostDetails = () => {
     );
   }
 
-  // NOT FOUND
+  
   if (!post) {
     return (
       <div className="min-h-screen flex items-center justify-center bg-bg text-text">
@@ -47,7 +47,7 @@ const PostDetails = () => {
         className="max-w-4xl mx-auto bg-card border border-muted rounded-2xl shadow-lg overflow-hidden"
       >
 
-        {/* IMAGE */}
+        
         <div className="overflow-hidden">
           <motion.img
             initial={{ scale: 1.1 }}
@@ -60,24 +60,24 @@ const PostDetails = () => {
 
         <div className="p-6 space-y-5">
 
-          {/* TITLE */}
+          
           <h1 className="text-2xl md:text-3xl font-bold text-primary">
             {post.problem_name}
           </h1>
 
-          {/* META */}
+          
           <div className="flex flex-wrap gap-2 text-sm text-muted">
             <span>👤 {post.user_name}</span>
             <span>•</span>
             <span>{new Date(post.created_at).toLocaleString()}</span>
           </div>
 
-          {/* DESCRIPTION */}
+      
           <p className="text-base leading-relaxed text-text/80">
             {post.description}
           </p>
 
-          {/* TAGS */}
+          
           <div className="flex flex-wrap gap-2">
             {post.tags?.map((tag, i) => (
               <span
@@ -89,7 +89,7 @@ const PostDetails = () => {
             ))}
           </div>
 
-          {/* DETAILS */}
+          
           <div className="bg-bg border border-muted rounded-xl p-4">
             <h2 className="font-semibold text-secondary mb-2">
               📌 Details
@@ -100,7 +100,7 @@ const PostDetails = () => {
             </p>
           </div>
 
-          {/* RELATED */}
+          
           <div>
             <h2 className="font-semibold text-lg text-accent mb-3">
               🔗 Related Posts
@@ -119,7 +119,7 @@ const PostDetails = () => {
         </div>
       </motion.div>
 
-      {/* FOOTER */}
+      
       <div className="text-center text-sm text-muted mt-6">
         Built for competitive programmers ⚡
       </div>

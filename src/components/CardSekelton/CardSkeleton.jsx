@@ -1,3 +1,4 @@
+
 const CardSkeleton = () => {
   return (
     <div className="animate-pulse bg-base-200 rounded-2xl p-4 h-[420px]">

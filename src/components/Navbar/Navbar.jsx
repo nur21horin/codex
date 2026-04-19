@@ -13,12 +13,12 @@ const Navbar = () => {
 
       <div className="flex justify-between items-center px-4 py-3">
 
-        {/* LOGO */}
+        
         <Link to="/" className="text-xl font-bold text-primary">
           CodeShare
         </Link>
 
-        {/* DESKTOP MENU */}
+        
         <div className="hidden md:flex gap-6 items-center text-sm text-text">
 
           <Link className="hover:text-primary transition" to="/">Home</Link>
@@ -34,7 +34,7 @@ const Navbar = () => {
 
           <ThemeToggle />
 
-          {/* USER */}
+          
           <div className="ml-2 px-3 py-1 rounded-full bg-secondary text-white text-xs">
             {user ? user.displayName : "Guest"}
           </div>
@@ -48,7 +48,7 @@ const Navbar = () => {
 
         </div>
 
-        {/* MOBILE BUTTON */}
+        
         <button
           className="md:hidden text-2xl text-text"
           onClick={() => setOpen(!open)}
@@ -58,7 +58,7 @@ const Navbar = () => {
 
       </div>
 
-      {/* MOBILE MENU */}
+      
       {open && (
         <div className="md:hidden px-4 pb-4 flex flex-col gap-3 text-sm bg-card border-t border-muted">
 

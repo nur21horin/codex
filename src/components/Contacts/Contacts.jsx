@@ -1,5 +1,5 @@
-import { useState } from "react";
-import emailjs from "@emailjs/browser";
+ import { useState } from "react";
+ import emailjs from "@emailjs/browser";
 import Swal from "sweetalert2";
 import confetti from "canvas-confetti";
 
@@ -22,7 +22,7 @@ const Contact = () => {
     timerProgressBar: true,
   });
 
-  // LIVE VALIDATION
+  // LIV 
   const validate = () => {
     const err = {};
 
@@ -212,3 +212,4 @@ const Contact = () => {
 };
 
 export default Contact;
+
