@@ -20,7 +20,7 @@ const Profile = () => {
   const [bio, setBio] = useState("");
   const [skills, setSkills] = useState("");
 
-  // ================= FETCH PROFILE =================
+  
   useEffect(() => {
     const fetchData = async () => {
       if (!user) return;
