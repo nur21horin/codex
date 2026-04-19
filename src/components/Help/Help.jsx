@@ -28,7 +28,7 @@ const Help = () => {
           </div>
         </Link>
 
-        {/* QUICK SUPPORT */}
+        
         <div className="p-4 rounded-xl border border-muted bg-bg hover:bg-card transition">
           <h2 className="font-semibold text-text">
             ⚡ Quick Support
