@@ -70,7 +70,6 @@ const CreatePost = () => {
     handleFile(file);
   };
 
-  // upload image
   const uploadImageToImageBB = async (file) => {
     if (!file) return "";
 
