@@ -155,7 +155,7 @@ const PostCard = ({ post }) => {
 
           </div>
 
-          {/* DETAILS BUTTON */}
+         
           <Link to={`/post/${post._id}`}>
             <button className="w-full px-3 py-2 text-sm rounded-lg bg-accent text-white hover:opacity-90 transition">
               View Details
