@@ -34,7 +34,7 @@ const Navbar = () => {
 
           <ThemeToggle />
 
-          {/* USER */}
+          
           <div className="ml-2 px-3 py-1 rounded-full bg-secondary text-white text-xs">
             {user ? user.displayName : "Guest"}
           </div>
