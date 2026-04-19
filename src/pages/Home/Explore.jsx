@@ -97,7 +97,7 @@ const Explore = () => {
         ))}
       </div>
 
-      {/* EMPTY STATE */}
+     
       {!loading && posts.length === 0 && (
         <div className="text-center py-10">
           <h2 className="text-xl font-semibold">No posts found</h2>
