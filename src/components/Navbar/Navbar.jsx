@@ -13,7 +13,7 @@ const Navbar = () => {
 
       <div className="flex justify-between items-center px-4 py-3">
 
-        {/* LOGO */}
+        
         <Link to="/" className="text-xl font-bold text-primary">
           CodeShare
         </Link>
