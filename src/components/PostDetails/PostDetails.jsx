@@ -77,7 +77,7 @@ const PostDetails = () => {
             {post.description}
           </p>
 
-          {/* TAGS */}
+          
           <div className="flex flex-wrap gap-2">
             {post.tags?.map((tag, i) => (
               <span
