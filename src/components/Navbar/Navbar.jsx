@@ -48,7 +48,7 @@ const Navbar = () => {
 
         </div>
 
-        {/* MOBILE BUTTON */}
+        
         <button
           className="md:hidden text-2xl text-text"
           onClick={() => setOpen(!open)}
