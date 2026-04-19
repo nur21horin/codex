@@ -1,5 +1,5 @@
  { useState } from "react";
-import emailjs from "@emailjs/browser";
+ emailjs from "@emailjs/browser";
 import Swal from "sweetalert2";
 import confetti from "canvas-confetti";
 
