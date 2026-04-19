@@ -119,7 +119,7 @@ const PostDetails = () => {
         </div>
       </motion.div>
 
-      {/* FOOTER */}
+      
       <div className="text-center text-sm text-muted mt-6">
         Built for competitive programmers ⚡
       </div>
