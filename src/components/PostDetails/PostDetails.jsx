@@ -60,7 +60,7 @@ const PostDetails = () => {
 
         <div className="p-6 space-y-5">
 
-          {/* TITLE */}
+          
           <h1 className="text-2xl md:text-3xl font-bold text-primary">
             {post.problem_name}
           </h1>
