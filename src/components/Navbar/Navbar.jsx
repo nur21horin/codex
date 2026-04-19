@@ -18,7 +18,7 @@ const Navbar = () => {
           CodeShare
         </Link>
 
-        {/* DESKTOP MENU */}
+        
         <div className="hidden md:flex gap-6 items-center text-sm text-text">
 
           <Link className="hover:text-primary transition" to="/">Home</Link>
