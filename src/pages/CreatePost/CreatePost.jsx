@@ -149,8 +149,6 @@ const CreatePost = () => {
         animate={{ opacity: 1, y: 0 }}
         className="w-full max-w-2xl bg-card border border-muted shadow-lg rounded-2xl p-6 space-y-5"
       >
-
-        {/* TITLE */}
         <h1 className="text-2xl font-bold text-center text-primary">
           Create CP Solution Post 🚀
         </h1>
