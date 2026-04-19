@@ -153,7 +153,6 @@ const CreatePost = () => {
           Create CP Solution Post 🚀
         </h1>
 
-        {/* INPUTS */}
         <input
           className="w-full px-3 py-2 rounded-lg bg-bg border border-muted text-text"
           placeholder="Problem Title"
