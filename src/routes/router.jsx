@@ -29,7 +29,7 @@ export const router = createBrowserRouter([
         element: <Profile></Profile>,
       },
      {
-        path: "login", // ❗ remove leading slash
+        path: "login",
         element: <Login />,
       },
       {
