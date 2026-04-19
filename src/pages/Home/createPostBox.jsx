@@ -32,7 +32,9 @@ const CreatePostBox = ({ search, setSearch, setPage, loading }) => {
         />
 
        
-       
+        {loading && (
+          <Loader2 className="absolute right-10 top-1/2 -translate-y-1/2 w-4 h-4 animate-spin text-primary" />
+        )}
 
         {showClear && !loading && (
           <button
