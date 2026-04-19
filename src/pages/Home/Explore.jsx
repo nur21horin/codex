@@ -98,14 +98,7 @@ const Explore = () => {
       </div>
 
      
-      {!loading && posts.length === 0 && (
-        <div className="text-center py-10">
-          <h2 className="text-xl font-semibold">No posts found</h2>
-          <p className="text-gray-500">
-            Try changing filters or search keywords
-          </p>
-        </div>
-      )}
+     
 
     </div>
   );
