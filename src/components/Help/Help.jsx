@@ -12,6 +12,7 @@ const Help = () => {
           Help & Support
         </h1>
 
+        
         <p className="text-center text-muted">
           We’re here to help you anytime 🚀
         </p>
