@@ -12,12 +12,12 @@ const Faq = () => {
   return (
     <div className="min-h-screen bg-base-200 px-4 py-10 transition-colors duration-300">
 
-      {/* HEADER */}
+
       <h1 className="text-3xl font-bold text-center text-primary mb-8">
         Frequently Asked Questions
       </h1>
 
-      {/* FAQ LIST */}
+      
       <div className="max-w-2xl mx-auto space-y-4">
 
         {questions.map((q) => (
