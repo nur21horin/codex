@@ -1,5 +1,9 @@
 
-
+import { useState } from "react";
+import useAuth from "../../hooks/useAuth";
+import Swal from "sweetalert2";
+import { useNavigate } from "react-router-dom";
+import { motion } from "framer-motion";
 
 const CreatePost = () => {
   const { user, loading } = useAuth();
