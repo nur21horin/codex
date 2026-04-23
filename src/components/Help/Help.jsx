@@ -48,7 +48,7 @@ const Help = () => {
           </p>
         </div>
 
-        {/* BUTTON */}
+        
         <div className="text-center pt-2">
           <Link
             to="/contact"
