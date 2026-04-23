@@ -16,7 +16,7 @@ const Help = () => {
           We’re here to help you anytime 🚀
         </p>
 
-        {/* FAQ */}
+        
         <Link to="/faq">
           <div className="p-4 rounded-xl border border-muted bg-bg hover:bg-card transition cursor-pointer">
             <h2 className="font-semibold text-text">
