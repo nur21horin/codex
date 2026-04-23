@@ -1,11 +1,5 @@
 
-import { useState } from "react";
-import useAuth from "../../hooks/useAuth";
-import Swal from "sweetalert2";
-import { useNavigate } from "react-router-dom";
-import { motion } from "framer-motion";
-import imageCompression from "browser-image-compression";
-import { Upload } from "lucide-react";
+
 
 const CreatePost = () => {
   const { user, loading } = useAuth();
