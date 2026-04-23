@@ -46,17 +46,16 @@ const FaqDetails = () => {
 
       <div className="max-w-xl w-full bg-base-100 shadow-xl rounded-2xl p-6 border border-base-300">
 
-        {/* QUESTION */}
+
         <h1 className="text-2xl font-bold text-primary mb-4 flex items-start gap-2">
           ❓ {faq.question}
         </h1>
 
-        {/* ANSWER */}
+    
         <p className="text-base-content/70 leading-relaxed mb-6">
           {faq.answer}
         </p>
 
-        {/* BACK BUTTON */}
         <Link
           to="/faq"
           className="btn btn-primary w-full hover:scale-[1.02] transition-transform"
