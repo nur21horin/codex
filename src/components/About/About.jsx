@@ -9,6 +9,7 @@ export default function About() {
           About CodeShare 🚀
         </h1>
 
+        
         <p className="text-center text-muted mb-8">
           A competitive programming platform to share solutions, insights, and problem-solving techniques
         </p>
