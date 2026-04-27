@@ -1,19 +1,13 @@
 export default function About() {
   return (
     <div className="min-h-screen bg-bg text-text flex items-center justify-center px-4 py-10">
-
       <div className="max-w-4xl w-full bg-card border border-muted shadow-lg rounded-2xl p-6">
-
-        
         <h1 className="text-3xl font-bold text-center text-primary mb-2">
           About CodeShare 🚀
         </h1>
-
-        
         <p className="text-center text-muted mb-8">
           A competitive programming platform to share solutions, insights, and problem-solving techniques
         </p>
-
         
         <div className="grid md:grid-cols-2 gap-5">
 
