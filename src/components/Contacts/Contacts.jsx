@@ -36,7 +36,6 @@ const Contact = () => {
   const handleChange = (e) => {
     setForm({ ...form, [e.target.name]: e.target.value });
 
-    // remove error while typing
     setErrors((prev) => ({ ...prev, [e.target.name]: "" }));
   };
 
