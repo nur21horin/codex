@@ -206,7 +206,7 @@ const CreatePost = () => {
         </div>
 
         {image && (
-          <p className="text-sm text-muted">📁 {image.name}</p>
+          <p className="text-sm text-muted">{image.name}</p>
         )}
 
         {preview && (
@@ -230,7 +230,7 @@ const CreatePost = () => {
         )}
 
         <div className="p-4 rounded-xl bg-bg border border-muted text-sm text-muted">
-          💡 Tip: Add clear explanation and optimized approach.
+           Tip: Add clear explanation and optimized approach.
         </div>
 
        
