@@ -22,7 +22,6 @@ const Contact = () => {
     timerProgressBar: true,
   });
 
-  // LIV 
   const validate = () => {
     const err = {};
 
