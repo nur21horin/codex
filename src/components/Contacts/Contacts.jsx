@@ -53,7 +53,6 @@ const Contact = () => {
     setLoading(true);
     setProgress(10);
 
-    // Sweet loading modal
     Swal.fire({
       title: "Sending message...",
       html: '<b>0%</b> completed',
@@ -63,7 +62,7 @@ const Contact = () => {
       didOpen: () => Swal.showLoading(),
     });
 
-    // fake progress animation
+
     const interval = setInterval(() => {
       setProgress((p) => {
         const next = p + Math.random() * 20;
@@ -92,7 +91,6 @@ const Contact = () => {
       setProgress(100);
       Swal.close();
 
-      // 🎉 CONFETTI SUCCESS
       confetti({
         particleCount: 120,
         spread: 80,
@@ -124,7 +122,7 @@ const Contact = () => {
 
       <div className="w-full max-w-xl bg-card border border-muted shadow-xl rounded-2xl p-6">
 
-        {/* HEADER */}
+
         <h1 className="text-3xl font-bold text-center text-primary">
           Contact Support
         </h1>
@@ -133,7 +131,6 @@ const Contact = () => {
           We usually respond within 24 hours ⚡
         </p>
 
-        {/* PROGRESS BAR */}
         {loading && (
           <div className="w-full bg-muted/30 h-2 rounded-full mb-4 overflow-hidden">
             <div
@@ -143,10 +140,10 @@ const Contact = () => {
           </div>
         )}
 
-        {/* FORM */}
+      
         <form onSubmit={handleSubmit} className="space-y-4">
 
-          {/* NAME */}
+
           <div>
             <input
               name="name"
@@ -162,7 +159,7 @@ const Contact = () => {
             )}
           </div>
 
-          {/* EMAIL */}
+         
           <div>
             <input
               name="email"
@@ -178,7 +175,6 @@ const Contact = () => {
             )}
           </div>
 
-          {/* MESSAGE */}
           <div>
             <textarea
               name="message"
